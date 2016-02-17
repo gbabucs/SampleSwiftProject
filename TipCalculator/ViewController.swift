@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     // 2
     taxPctSlider.value = Float(tipCalc.taxPct) * 100.0
     // 3
-    taxPctLabel.text = "Tax Percentage (\(Int(taxPctSlider.value))%)"
+    taxPctLabel.text = "Tax Percentage is (\(Int(taxPctSlider.value))%)"
     // 4
     resultsTextView.text = ""
   }
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     for tipPct in keys {
       let tipValue = possibleTips[tipPct]!
       let prettyTipValue = String(format:"%.2f", tipValue)
-      results += "\(tipPct)%: \(prettyTipValue)\n"
+      results += "the results is\(tipPct)%: \(prettyTipValue)\n"
     }
     // 5
     resultsTextView.text = results
